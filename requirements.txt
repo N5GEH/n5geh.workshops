@@ -1,2 +1,2 @@
-filip~=0.7.3
+filip~=0.7.5
 rdflib~=7.2.1
