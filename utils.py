@@ -16,8 +16,6 @@ CREDENTIALS = {
 
 class KeycloakTokenManager:
     def __init__(self, fiware_service: str):
-        if fiware_service not in AVAILABLE_SERVICES:
-            raise ValueError(f"Service {fiware_service} not recognized.")
         self.client = KeycloakOpenID(
             server_url="https://sso.eonerc.rwth-aachen.de",
             client_id=CREDENTIALS["client_id"],
